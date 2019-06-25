@@ -14,6 +14,10 @@ A new Flutter project demonstrating a pattern for managing state between the dra
 Create a separate widget for the drawer and just use in anywhere you need to.
 
 Manage the Drawer State with a [Provider to Manage State][1]
+- [Flutter ChangeNotifier Documentation](https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html)
+- [Flutter notifyListeners method Documentation](https://api.flutter.dev/flutter/foundation/ChangeNotifier/notifyListeners.html)
+
+this class contains state information and the appropriate methods to modify the state. When state updates happen, the call to [`notifyListeners`](https://api.flutter.dev/flutter/foundation/ChangeNotifier/notifyListeners.html) is call to let the application know the the appropriate widgets need to be redrawn
 ```dart
 class DrawerStateInfo with ChangeNotifier {
   int _currentDrawer = 0;
@@ -30,6 +34,7 @@ class DrawerStateInfo with ChangeNotifier {
 }
 ```
 Adding State Management to the Widget tree
+- [Flutter MultiProvider Documentation](https://pub.dev/documentation/provider/latest/provider/MultiProvider-class.html)
 ```dart
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -53,7 +58,9 @@ class MyApp extends StatelessWidget {
 ```
 
 
-Creating The Drawer Widget for reuse in application
+Creating The Drawer Widget for reuse in application. We are tracking the state to specify which item is the active item in the menu and then based on that we are updating the styling of the menu item's title
+
+- [Flutter Drawer Widget Documentation](https://api.flutter.dev/flutter/material/Drawer-class.html)
 ```dart
 class MyDrawer extends StatelessWidget {
   MyDrawer(this.currentPage);
@@ -111,7 +118,7 @@ class MyDrawer extends StatelessWidget {
 
 ```
 
-Use of Drawer in one of your pages
+Use of Drawer in one of your pages; when using the Drawer, we specify the name of the Drawer when creating the instance. This should probably be a constant or maybe even an object containing addition information but this works for the example.
 ```dart
 class MyAboutPage extends StatefulWidget {
   @override
