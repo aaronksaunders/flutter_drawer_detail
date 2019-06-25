@@ -29,7 +29,7 @@ A new Flutter project demonstrating a pattern for managing state between the dra
 
 Create a separate widget for the drawer and just use in anywhere you need to.
 
-Manage the Drawer State with a [Provider to Manage State][1]
+Manage the Drawer State using a [Provider][1] that will keep track of currently selected menu item
 - [Flutter ChangeNotifier Documentation](https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html)
 - [Flutter notifyListeners method Documentation](https://api.flutter.dev/flutter/foundation/ChangeNotifier/notifyListeners.html)
 
@@ -44,9 +44,6 @@ class DrawerStateInfo with ChangeNotifier {
     notifyListeners();
   }
 
-  void increment() {
-    notifyListeners();
-  }
 }
 ```
 Adding State Management to the Widget tree
