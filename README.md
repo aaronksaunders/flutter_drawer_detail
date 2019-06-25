@@ -10,12 +10,19 @@ A new Flutter project demonstrating a pattern for managing state between the dra
   - [Provider Package Documentation][1]
   
 ## What It Looks Like
-<table>
+<table border="0">
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><img src="screenshots/home-page-list.png"></td>
+    <td><img src="screenshots/active-drawer-home.png"></td>
+    <td><img src="screenshots/about-page.png"></td>
+    <td><img src="screenshots/about-active.png"></td>
   </tr>  
+  <tr center>
+    <td  align="center"><p>Home Page</p></td>
+    <td  align="center"><p>Drawer Showing Active Page</p></td>
+    <td  align="center"><p>About Detail Page</p></td>
+    <td  align="center"><p>Drawer Showing Active Page</p></td>
+  </tr>   
 </table>
 
 ## Quick Overview of Code
