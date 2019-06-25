@@ -5,12 +5,12 @@ import 'package:flutter_drawer/pages/MyHomePageDetail.dart';
 /// simple list clas for rendering a list with basic
 /// list items
 ///
-class AList extends StatefulWidget {
+class ASimpleList extends StatefulWidget {
   @override
-  _AListState createState() => new _AListState();
+  _ASimpleListState createState() => new _ASimpleListState();
 }
 
-class _AListState extends State<AList> {
+class _ASimpleListState extends State<ASimpleList> {
   final TextStyle _biggerFont = const TextStyle(fontSize: 18.0);
 
   @override
@@ -49,6 +49,5 @@ class _AListState extends State<AList> {
 
   final items = new List<String>.generate(
       20, (int index) => 'List Item ' + '$index'); // [0, 1, 4]
-
 
 }

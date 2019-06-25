@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drawer/component/AList.dart';
+import 'package:flutter_drawer/component/ASimpleList.dart';
 import 'package:flutter_drawer/component/MainDrawer.dart';
 import 'package:flutter_drawer/pages/MyHomePageDetail.dart';
 
@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
               // Text(
               //   'You have pushed the button this many times:',
               // ),
-              AList(),
+              ASimpleList(),
               RaisedButton(
                 child: Text('Next Page'),
                 onPressed: () {

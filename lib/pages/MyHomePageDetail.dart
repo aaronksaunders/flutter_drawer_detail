@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drawer/component/MainDrawer.dart';
 
 class MyHomePageDetail extends StatefulWidget {
   MyHomePageDetail({Key key, this.title, this.listData}) : super(key: key);
