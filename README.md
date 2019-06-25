@@ -8,6 +8,15 @@ A new Flutter project demonstrating a pattern for managing state between the dra
 - The Provider Package
   - A dependency injection system built with widgets for widgets. provider is mostly syntax sugar for InheritedWidget, to make common use-cases straightforward.
   - [Provider Package Documentation][1]
+  
+## What It Looks Like
+<table>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>  
+</table>
 
 ## Quick Overview of Code
 
